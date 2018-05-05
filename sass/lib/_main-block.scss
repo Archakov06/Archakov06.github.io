@@ -3,11 +3,6 @@
 	z-index: 1;
 	position: relative;
 
-	&__left {
-		width: 60%;
-		position: relative;
-	}
-
 	&__bg {
 		width: 40%;
     height: 100vh;
@@ -31,10 +26,14 @@
 	}
 
 	&__info {
-		width: 630px;
-		@include center();
+		width: 60%;
+		position: relative;
 
-    	h1 {
+		&-center {
+			width: 630px;
+			@include center();
+
+			h1 {
 				font-family: 'PT Mono', 'PT Serif', serif, Helvetica, system-ui;
 				font-size: 100px;
 				letter-spacing:0.9px;
@@ -51,7 +50,12 @@
 				letter-spacing: -1px;
 				line-height: 61px;
 				width: 640px;
+
+				a {
+					font-size: 26px;
+				}
 			}
+		}
 
 	}
 
