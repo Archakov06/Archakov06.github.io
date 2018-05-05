@@ -1,0 +1,70 @@
+.main-block {
+	display: flex;
+	z-index: 1;
+	position: relative;
+
+	&__left {
+		width: 60%;
+		position: relative;
+	}
+
+	&__bg {
+		width: 40%;
+    height: 100vh;
+		background-image: url('https://source.unsplash.com/random');
+		background-position: center;
+		background-size: cover;
+		position: relative;
+		overflow: hidden;
+	}
+
+	&__email {
+		display: none;
+		position: absolute;
+		bottom: 20px;
+		left: 10%;
+		margin-top: 40px;
+		font-size: 20px;
+		b, a {
+			font-family: 'Ubuntu Mono';
+		}
+	}
+
+	&__info {
+		width: 630px;
+		@include center();
+
+    	h1 {
+				font-family: 'Times', 'Times New Roman', 'PT Serif', serif, Helvetica, system-ui;
+				font-size: 110px;
+				letter-spacing:0.9px;
+				line-height: 100px;
+				margin-bottom: 20px;
+				transition: text-shadow 0.3s ease-out;
+				width: 600px;
+			}
+
+			p {
+				font-family: 'Ubuntu Mono';
+				font-size: 32px;
+				color: $base;
+				letter-spacing: 0.1px;
+				line-height: 61px;
+				width: 640px;
+			}
+
+	}
+
+}
+
+@media screen and (max-width: 1140px) {
+	.main-block__info--left {
+		h1 {
+			font-size: 100px;
+		}
+		p {
+			width: 100%;
+			font-size: 28px;
+		}
+	}
+}

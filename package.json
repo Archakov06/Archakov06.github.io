@@ -1,0 +1,17 @@
+{
+  "name": "archakov-about",
+  "version": "0.0.1",
+  "description": "About page",
+  "author": "Archakov Dennis",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.14.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-ejs": "^2.2.0",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.0"
+  }
+}
