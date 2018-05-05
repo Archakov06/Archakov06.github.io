@@ -48,7 +48,7 @@ gulp.task("ejs", function() {
 gulp.task('browser-sync', function() {
     browserSync({
         server: {
-            baseDir: "build/", //　Target directory
+            baseDir: "./", //　Target directory
             index  : "index.html" // index file
         }
     });
