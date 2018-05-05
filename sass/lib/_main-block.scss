@@ -68,3 +68,27 @@
 		}
 	}
 }
+
+@media screen and (max-width: 1024px) {
+	.main-block__bg {
+		width: 35%;
+	}
+	.main-block__left {
+		width: 65%;
+		h1 {
+			font-size: 90px;
+		}
+		p {
+			font-size: 26px;
+		}
+	}
+	.main-block__info {
+		width: 520px;
+	}
+}
+
+@media screen and (min-width: 1441px) {
+	.main-block__bg, .main-block__left {
+		width: 50%;
+	}
+}
